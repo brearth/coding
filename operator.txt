@@ -1,0 +1,49 @@
+
+{
+            Console.WriteLine("put the code");
+            int code = int.Parse(Console.ReadLine());
+            string import = Console.ReadLine();
+
+            int first  = 
+                (code / 100000);
+            int second =
+                (code / 10000) - (first * 10);
+            int third = 
+                (code / 1000) - (second * 10) - (first * 100);
+            int fouth = 
+                (code / 100) - (third * 10) - (second * 100) - (first * 1000);
+            int fifth =
+                (code / 10) - (fouth * 10) - (third * 100) - (second * 1000) - (first * 10000);
+            int sixth = 
+                code - ( first* 100000) - (second * 10000) - (third * 1000) - (fouth * 100) - (fifth * 10);
+            //to check cia
+            bool YouareCIA = 
+                (import == "CIA")
+                && (third >= 6)
+                && (third != 8)
+                && (fifth != 3)
+                && (fifth != 5)
+                && (sixth % 3 == 0) 
+                && (sixth != 1) ;
+            //to check fbi
+            bool YouareFBI =
+                (import == "FBI")
+                && (second % 2 == 1)
+                && (fouth % 2 == 0 && fouth != 6)
+                && (first >= 4 && first <= 7); 
+            //to check nsa  
+            bool YouareNSA =
+              (import == "NSA")  
+              && (fouth % 3 == 0
+               && fouth % 3 == 1)
+              && (30 % sixth == 0) 
+              && (sixth == 6 || fifth == 7 || fouth == 7 || third  == 7 || second == 7 || first == 7);
+           
+            
+            
+            
+            bool Display = YouareCIA || YouareFBI || YouareNSA;
+            Console.WriteLine(Display);
+
+
+        }
