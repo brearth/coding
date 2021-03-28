@@ -1,0 +1,100 @@
+using System;
+
+namespace ConsoleApp38
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            Console.Write("How many box in box1 : ");
+            int cask1 = int.Parse(Console.ReadLine());
+            Console.Write("How many box in box2 : ");
+            int cask2 = int.Parse(Console.ReadLine());
+            Console.Write("How many box in box3 : ");
+            int cask3 = int.Parse(Console.ReadLine());
+            Console.WriteLine(" ");
+            Console.WriteLine(" ");
+
+            while (cask1 > 0 || cask2 > 0 || cask3 > 0)
+            {
+            
+                Console.WriteLine("Round of A");
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.WriteLine("it's cask1 :  " + cask1);
+                Console.WriteLine("it's cask2 :  " + cask2);
+                Console.WriteLine("it's cask3 :  " + cask3);
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.Write("Number of cask that you choose : ");
+                Console.Write(" ");
+                int NumberOfCask = int.Parse(Console.ReadLine());
+                Console.Write("Quantity of box that you want to take it out: ");
+                Console.Write(" ");
+                int QuantityOfBox = int.Parse(Console.ReadLine());
+
+                if (NumberOfCask == 1)
+                {
+                    cask1 = cask1 - QuantityOfBox;
+                }
+                else if (NumberOfCask == 2)
+                {
+                    cask2 = cask2 - QuantityOfBox;
+                }
+                else if (NumberOfCask == 3)
+                {
+                    cask3 = cask3 - QuantityOfBox;
+                }
+
+
+                if (cask1 == 0 && cask2 == 0 && cask3 == 0)
+                {
+                    Console.WriteLine(" ");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("                                                B                                                ");
+                    Console.WriteLine("                                               WIN                                               ");
+                    break;
+
+                }
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.WriteLine("Round of B");
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.WriteLine("it's cask1 :  " + cask1);
+                Console.WriteLine("it's cask2 :  " + cask2);
+                Console.WriteLine("it's cask3 :  " + cask3);
+                Console.WriteLine(" ");
+                Console.WriteLine(" ");
+                Console.Write("Number of cask that you choose : ");
+                NumberOfCask = int.Parse(Console.ReadLine());
+                Console.Write("Quantity of box that you want to take it out : ");
+                Console.Write(" ");
+                QuantityOfBox = int.Parse(Console.ReadLine());
+
+                if (NumberOfCask == 1)
+                {
+                    cask1 = cask1 - QuantityOfBox;
+                }
+                else if (NumberOfCask == 2)
+                {
+                    cask2 = cask2 - QuantityOfBox;
+                }
+                else if (NumberOfCask == 3)
+                {
+                    cask3 = cask3 - QuantityOfBox;
+                }
+                if (cask1 == 0 && cask2 == 0 && cask3 == 0)
+                {
+                    Console.WriteLine(" ");
+                    Console.WriteLine(" ");
+                    Console.WriteLine("                                                A                                                ");
+                    Console.WriteLine("                                               WIN                                               ");
+                    break;
+                }
+            }
+        }
+    }
+}
