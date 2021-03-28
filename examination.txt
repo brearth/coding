@@ -1,0 +1,19 @@
+ {
+            Console.WriteLine("Input A number : ");
+            double NumberA = double.Parse(Console.ReadLine());
+            Console.WriteLine("Input B number : ");
+            double NumberB = double.Parse(Console.ReadLine());
+            double x = NumberA;
+            double y = NumberB;
+            //do before get in the condition.
+            do
+            {
+                if (x < y)
+                { x = x + NumberA; }
+                else
+                { y = y + NumberB; }
+            }
+            while (x == y);
+            {
+                Console.WriteLine("Print value of x : " + x);
+            }
