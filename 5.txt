@@ -1,0 +1,44 @@
+using System;
+
+namespace ConsoleApp42
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            {
+                Console.WriteLine("input day");
+                int day = int.Parse(Console.ReadLine());
+                Console.WriteLine("input time");
+                int time = int.Parse(Console.ReadLine());
+                int breakfastSet1 = int.Parse(Console.ReadLine());
+                int weekendSet2 = int.Parse(Console.ReadLine());
+                int coffee3 = int.Parse(Console.ReadLine());
+
+                while (day > 0 || day <= 7 || time > 8 || time <= 18) ;
+                {
+                    int BreakfastSet = int.Parse(Console.ReadLine());
+                    int WeekendSet = int.Parse(Console.ReadLine());
+                    int Coffee = int.Parse(Console.ReadLine());
+                    string food = (Console.ReadLine());
+                    Console.WriteLine("input foods");
+                    switch (food)
+                    {
+                        case "Breakfast Set":
+                            breakfastSet1 = BreakfastSet - 1;
+                            break;
+
+                        case "WeekendSet":
+                            WeekendSet = WeekendSet - 1;
+                            break;
+
+                        case "Coffee":
+                            Coffee = Coffee - 1;
+                            break;
+
+                    }
+                }
+            }
+        }
+    }
+    }

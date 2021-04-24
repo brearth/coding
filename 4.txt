@@ -1,0 +1,17 @@
+          double dx, dy, step,x,y;
+            double i = 1;
+            double x1 = int.Parse(Console.ReadLine());
+            double y1 = int.Parse(Console.ReadLine());
+            double x2 = int.Parse(Console.ReadLine());
+            double y2 = int.Parse(Console.ReadLine());
+
+            dx = x2 - x1;
+            dy = y2 - y1;
+
+            if (dx = dy)
+            { step = Math.Abs(dx); }
+            else 
+            { step = Math.Abs(dy);}
+            if (dx = dy)
+            { dx = step; }
+            else if 

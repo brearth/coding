@@ -1,0 +1,23 @@
+using System;
+
+namespace ConsoleApp43
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string mode = (Console.ReadLine());
+            float filmBackWidth = float.Parse(Console.ReadLine());
+            float length, fov;
+
+            if (filmBackWidth > 0)
+            {
+                Console.WriteLine("Invalid fikmBlackWidth");
+            }
+            else if (mode = length)
+            {
+
+            }
+        }
+    }
+}
